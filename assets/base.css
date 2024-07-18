@@ -3608,7 +3608,7 @@ details-disclosure > details {
 
 @media (max-width: 768px) {
   .bottom-navigation ul {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .bottom-navigation li {
