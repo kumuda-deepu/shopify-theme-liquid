@@ -3574,16 +3574,20 @@ details-disclosure > details {
   width: 100%;
   background-color: #333;
   text-align: center;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 .bottom-navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .bottom-navigation li {
-  display: inline;
   margin: 0 15px;
 }
 
@@ -3591,7 +3595,9 @@ details-disclosure > details {
   color: white;
   text-decoration: none;
   padding: 14px 20px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom-navigation a:hover {
@@ -3600,4 +3606,29 @@ details-disclosure > details {
 
 .bottom-navigation i {
   margin-right: 8px; /* Space between icon and text */
+}
+
+@media (max-width: 768px) {
+  .bottom-navigation ul {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .bottom-navigation li {
+    margin: 5px 0; /* Less margin for stacked items */
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-navigation {
+    padding: 5px 0;
+  }
+
+  .bottom-navigation a {
+    padding: 10px;
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  .bottom-navigation i {
+    margin-right: 5px; /* Smaller margin for smaller screens */
+  }
 }
