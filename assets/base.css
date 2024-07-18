@@ -3568,27 +3568,36 @@ details-disclosure > details {
 }
 
 
-@media (max-width: 768px) {
-  .bottom-navigation ul {
-    flex-direction: column;
-  }
-
-  .bottom-navigation li {
-    margin: 5px 0;
-  }
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .bottom-navigation {
-    padding: 5px 0;
-  }
+.bottom-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .bottom-navigation a {
-    padding: 8px;
-    font-size: 14px;
-  }
+.bottom-navigation li {
+  display: inline;
+  margin: 0 15px;
+}
 
-  .bottom-navigation i {
-    margin-right: 5px;
-  }
+.bottom-navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+.bottom-navigation a:hover {
+  background-color: #555;
+}
+
+.bottom-navigation i {
+  margin-right: 8px; /* Space between icon and text */
 }
