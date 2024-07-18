@@ -3575,7 +3575,6 @@ details-disclosure > details {
   background-color: #333;
   text-align: center;
   padding: 10px 0;
-  z-index: 1000; /* Ensure it's above other content */
 }
 
 .bottom-navigation ul {
@@ -3584,7 +3583,6 @@ details-disclosure > details {
   padding: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .bottom-navigation li {
@@ -3610,11 +3608,11 @@ details-disclosure > details {
 
 @media (max-width: 768px) {
   .bottom-navigation ul {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
 
   .bottom-navigation li {
-    margin: 5px 0; /* Less margin for stacked items */
+    margin: 5px 0;
   }
 }
 
@@ -3624,11 +3622,11 @@ details-disclosure > details {
   }
 
   .bottom-navigation a {
-    padding: 10px;
-    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px;
+    font-size: 14px;
   }
 
   .bottom-navigation i {
-    margin-right: 5px; /* Smaller margin for smaller screens */
+    margin-right: 5px;
   }
 }
