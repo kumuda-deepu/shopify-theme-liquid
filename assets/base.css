@@ -3568,71 +3568,27 @@ details-disclosure > details {
 }
 
 
-.bottom-navigation {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  text-align: center;
-  z-index: 1000; 
-}
-
-.bottom-navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.bottom-navigation li {
-  margin: 0 15px;
-}
-
-.bottom-navigation a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: inline-block;
-}
-
-.bottom-navigation a:hover {
-  background-color: #555;
-}
-
-.bottom-navigation i {
-  margin-right: 8px; 
-}
-
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bottom-navigation ul {
     flex-direction: column;
-    align-items: center;
   }
 
   .bottom-navigation li {
-    margin: 10px 0;
-  }
-
-  .bottom-navigation a {
-    padding: 10px 15px;
+    margin: 5px 0;
   }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .bottom-navigation ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .bottom-navigation li {
-    margin: 5px;
+@media (max-width: 480px) {
+  .bottom-navigation {
+    padding: 5px 0;
   }
 
   .bottom-navigation a {
-    padding: 10px 15px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .bottom-navigation i {
+    margin-right: 5px;
   }
 }
